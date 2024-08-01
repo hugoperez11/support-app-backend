@@ -1,0 +1,19 @@
+spring.application.name=supportApp
+
+# Configuración de la base de datos H2
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+# Inicialización de la base de datos
+spring.datasource.initialization-mode=always
+spring.sql.init.schema-locations=classpath:schema.sql
+spring.datasource.data=classpath:data.sql
+
+# Mostrar SQL en los logs
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+# Configuración de los scripts SQL
+spring.sql.init.mode=always
